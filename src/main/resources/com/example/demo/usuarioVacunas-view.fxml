@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="ancUserVacunas" prefHeight="448.0" prefWidth="252.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.UserVacunasController">
+   <children>
+      <ImageView fitHeight="448.0" fitWidth="289.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenesparaproyecto/4606ed955169e30c0a98fba712c282c1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="16.0" layoutY="29.0" text="User opciones de vacunas">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Label layoutX="48.0" layoutY="85.0" text="Mostrar vacunas" />
+      <Button fx:id="buttonMostrar" layoutX="48.0" layoutY="116.0" mnemonicParsing="false" onMouseClicked="#OnClickVacunas" prefHeight="26.0" prefWidth="76.0" style="-fx-background-color: #5AE85F; -fx-background-radius: 0;" text="Ver" />
+      <Button fx:id="buttonSalir" layoutX="152.0" layoutY="311.0" mnemonicParsing="false" onMouseClicked="#OnClickSalir" prefHeight="26.0" prefWidth="58.0" style="-fx-background-color: red;" text="Salir" textFill="#efefef" />
+   </children>
+</AnchorPane>

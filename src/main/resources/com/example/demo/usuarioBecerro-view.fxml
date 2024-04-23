@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPaneUserBecerros" prefHeight="516.0" prefWidth="511.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.UserBecerroController">
+    <children>
+        <ImageView fitHeight="516.0" fitWidth="621.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../imagenesparaproyecto/f49bd73dbd58ec3fe3c47e9c589f6c47.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="161.0" layoutY="14.0" text="Ventas Becerros">
+            <font>
+                <Font name="System Bold Italic" size="21.0" />
+            </font>
+        </Label>
+        <Button fx:id="buttonSalir" layoutX="419.0" layoutY="475.0" mnemonicParsing="false" onMouseClicked="#OnClickSalir" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: red;" text="Salir" textFill="#e7e2e2" />
+      <ImageView fx:id="imageBra" fitHeight="77.0" fitWidth="86.0" layoutX="161.0" layoutY="62.0" onMouseClicked="#onClickedBra" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenesparaproyecto/Brahman-advertorial-1-1.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="79.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brahman" />
+      <ImageView fx:id="imageAngus" fitHeight="133.0" fitWidth="93.0" layoutX="165.0" layoutY="144.0" onMouseClicked="#onClickedAngus" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenesparaproyecto/angus.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="79.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Angus" />
+      <ImageView fx:id="imageLim" fitHeight="62.0" fitWidth="200.0" layoutX="165.0" layoutY="236.0" onMouseClicked="#onClickedLim" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenesparaproyecto/Cows-2.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="86.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Limousin" />
+      <ImageView fx:id="imageHere" fitHeight="62.0" fitWidth="200.0" layoutX="165.0" layoutY="342.0" onMouseClicked="#onClickedHere" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenesparaproyecto/3416.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="88.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hereford" />
+    </children>
+</AnchorPane>

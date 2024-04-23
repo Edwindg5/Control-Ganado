@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPaneEliminar" prefHeight="569.0" prefWidth="477.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.DueñoEliminarToroController">
+   <children>
+      <ImageView fitHeight="585.0" fitWidth="493.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/Fondo2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="176.0" layoutY="75.0" text="Nombre del toro" />
+      <TextField fx:id="textNombre" layoutX="178.0" layoutY="101.0" prefHeight="26.0" prefWidth="118.0" />
+      <Label layoutX="178.0" layoutY="145.0" text="Peso" />
+      <TextField fx:id="textPeso" layoutX="179.0" layoutY="169.0" prefHeight="26.0" prefWidth="118.0" />
+      <Label layoutX="182.0" layoutY="204.0" text="Tipo" />
+      <TextField fx:id="textTipo" layoutX="179.0" layoutY="230.0" prefHeight="26.0" prefWidth="118.0" />
+      <Label layoutX="178.0" layoutY="269.0" text="Salud" />
+      <Button fx:id="buttonEliminar" layoutX="296.0" layoutY="372.0" mnemonicParsing="false" onMouseClicked="#OnClickEliminar" prefHeight="26.0" prefWidth="118.0" text="Eliminar" />
+      <ChoiceBox fx:id="choiceBoxSalud" layoutX="180.0" layoutY="296.0" prefHeight="26.0" prefWidth="118.0" />
+      <Label layoutX="180.0" layoutY="38.0" text="Eliminar toro">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonSalir" layoutX="57.0" layoutY="372.0" mnemonicParsing="false" onMouseClicked="#OnClickSalir" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: red;" text="Salir" />
+   </children>
+</AnchorPane>

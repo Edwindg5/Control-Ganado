@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="ancLim" prefHeight="558.0" prefWidth="539.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.InfoLimController">
+    <children>
+      <ImageView fitHeight="558.0" fitWidth="730.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenesparaproyecto/f49bd73dbd58ec3fe3c47e9c589f6c47.jpg" />
+         </image>
+      </ImageView>
+        <TextArea fx:id="txtInformacion" editable="false" layoutX="24.0" layoutY="112.0" prefHeight="300" prefWidth="500" wrapText="true" />
+      <Text layoutX="202.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Raza Limousin">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

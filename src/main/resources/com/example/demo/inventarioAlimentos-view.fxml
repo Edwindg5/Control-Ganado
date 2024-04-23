@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="ancInventarioAlimentos" prefHeight="542.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.InventarioAlimentosController">
+    <children>
+        <ImageView fitHeight="541.0" fitWidth="666.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../imagenesparaproyecto/f49bd73dbd58ec3fe3c47e9c589f6c47.jpg" />
+            </image>
+        </ImageView>
+        <TextField fx:id="txtNombre" layoutX="32.0" layoutY="114.0" promptText="Nombre del alimento" />
+        <TextField fx:id="txtCantidad" layoutX="32.0" layoutY="183.0" promptText="Cantidad" />
+        <Button fx:id="btnAgregar" layoutX="32.0" layoutY="258.0" onAction="#agregarAlimento" text="Agregar" />
+        <Button fx:id="btnEliminar" layoutX="32.0" layoutY="320.0" onAction="#eliminarAlimento" text="Eliminar Alimento" />
+        <Button fx:id="btnVerSugeridos" layoutX="32.0" layoutY="380.0" onAction="#verAlimentosSugeridos" text="Ver Alimentos Sugeridos" />
+        <TableView fx:id="tablaAlimentos" layoutX="200.0" layoutY="50.0" prefHeight="300.0" prefWidth="300.0">
+            <columns>
+                <TableColumn fx:id="columnaNombre" prefWidth="150.0" text="Nombre">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="nombre" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="columnaCantidad" prefWidth="150.0" text="Cantidad">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="cantidad" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+      <Button fx:id="buttonSalir" layoutX="392.0" layoutY="430.0" mnemonicParsing="false" onMouseClicked="#onClickedSalir" text="Salir" />
+    </children>
+</AnchorPane>

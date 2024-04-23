@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPaneCompra" prefHeight="374.0" prefWidth="224.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.DueñoComprasController">
+   <children>
+      <ImageView fitHeight="395.0" fitWidth="320.0" layoutX="2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenesparaproyecto/4606ed955169e30c0a98fba712c282c1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="50.0" layoutY="64.0" text="Nombre del producto" />
+      <Label layoutX="51.0" layoutY="146.0" text="Cantidad" />
+      <TextField fx:id="textCantidad" layoutX="51.0" layoutY="178.0" prefHeight="26.0" prefWidth="126.0" />
+      <Button fx:id="buttonSalida" layoutX="129.0" layoutY="325.0" mnemonicParsing="false" onMouseClicked="#OnClickSalida" text="Salida" />
+      <Button fx:id="buttonGuardarCompra" layoutX="47.0" layoutY="238.0" mnemonicParsing="false" onMouseClicked="#OnClickompra" prefHeight="26.0" prefWidth="126.0" text="Guardar compra" />
+      <ChoiceBox fx:id="choiceBoxNombre" layoutX="48.0" layoutY="100.0" prefHeight="26.0" prefWidth="126.0" />
+      <Label layoutX="51.0" layoutY="21.0" text="Compra">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

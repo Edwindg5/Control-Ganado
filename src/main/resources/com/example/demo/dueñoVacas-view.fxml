@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPaneVacas" prefHeight="522.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.DueñoVacasController">
+   <children>
+      <ImageView fitHeight="522.0" fitWidth="659.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenesparaproyecto/f49bd73dbd58ec3fe3c47e9c589f6c47.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="77.0" layoutY="24.0" prefHeight="50.0" prefWidth="383.0" text="Ociones de administrador vacas">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="83.0" text="Agregar vaca" />
+      <Button fx:id="buttonAgregarVacas" layoutX="36.0" layoutY="112.0" mnemonicParsing="false" onMouseClicked="#OnclickAgregarVaca" prefHeight="32.0" prefWidth="70.0" style="-fx-background-color: #5AE85F; -fx-background-radius: 0;" text="Agregar" />
+      <Label layoutX="37.0" layoutY="160.0" text="Eliminar vaca" />
+      <Button fx:id="buttonEliminarVaca" layoutX="36.0" layoutY="184.0" mnemonicParsing="false" onMouseClicked="#OnClickEliminarVaca" prefHeight="32.0" prefWidth="70.0" style="-fx-background-color: #5AE85F; -fx-background-radius: 0;" text="Eliminar" />
+      <Label layoutX="19.0" layoutY="320.0" text="Ver estado de salud" />
+      <Button fx:id="buttonVerSaludVaca" layoutX="36.0" layoutY="342.0" mnemonicParsing="false" onMouseClicked="#OnClickVerSalud" prefHeight="32.0" prefWidth="70.0" style="-fx-background-color: #5AE85F; -fx-background-radius: 0;" text="Ver" />
+      <Label layoutX="194.0" layoutY="83.0" text="Buscar por id" />
+      <Label layoutX="172.0" layoutY="234.0" text="Buscar por nombre" />
+      <Button fx:id="buttonBuscarId" layoutX="193.0" layoutY="112.0" mnemonicParsing="false" onMouseClicked="#OnClickBuscarId" prefHeight="32.0" prefWidth="70.0" style="-fx-background-color: #5AE85F; -fx-background-radius: 0;" text="Buscar" />
+      <Button fx:id="buttonBuscarNombre" layoutX="187.0" layoutY="260.0" mnemonicParsing="false" onMouseClicked="#OnClickBuscarNombre" prefHeight="32.0" prefWidth="70.0" style="-fx-background-color: #5AE85F; -fx-background-radius: 0;" text="Buscar" />
+      <Label layoutX="186.0" layoutY="320.0" text="Buscar por peso" />
+      <Button fx:id="buttonBuscarPeso" layoutX="187.0" layoutY="342.0" mnemonicParsing="false" onMouseClicked="#OnClickBuscarPeso" prefHeight="32.0" prefWidth="70.0" style="-fx-background-color: #5AE85F; -fx-background-radius: 0;" text="Buscar" />
+      <Button fx:id="buttonSalir" layoutX="272.0" layoutY="425.0" mnemonicParsing="false" onMouseClicked="#OnClickSalir" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: red;" text="Salir" />
+      <Button fx:id="buttonVacasv" layoutX="36.0" layoutY="260.0" mnemonicParsing="false" onMouseClicked="#OnClickVacas" prefHeight="32.0" prefWidth="70.0" style="-fx-background-color: #5AE85F; -fx-background-radius: 0;" text="Ver" />
+      <Label layoutX="44.0" layoutY="234.0" prefHeight="18.0" prefWidth="54.0" text="Vacas" />
+   </children>
+</AnchorPane>

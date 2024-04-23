@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPaneVacunas" prefHeight="254.0" prefWidth="278.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.DueñoVacunasController">
+   <children>
+      <ImageView fx:id="buttonVerTabla" fitHeight="490.0" fitWidth="530.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenesparaproyecto/f49bd73dbd58ec3fe3c47e9c589f6c47.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="164.0" layoutY="22.0" text="Opciones de vacuna">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="83.0" text="Agregar vacuna" />
+      <Label layoutX="187.0" layoutY="83.0" text="Mostrar vacunas" />
+      <Button fx:id="buttonAgregar" layoutX="66.0" layoutY="114.0" mnemonicParsing="false" onMouseClicked="#btnAgregar" prefHeight="35.0" prefWidth="83.0" style="-fx-background-radius: 0; -fx-background-color: #5AE85F;" text="Agregar" />
+      <Button fx:id="buttonVer" layoutX="189.0" layoutY="114.0" mnemonicParsing="false" onMouseClicked="#OnClickVer" prefHeight="35.0" prefWidth="83.0" style="-fx-background-radius: 0; -fx-background-color: #5AE85F;" text="Ver" />
+      <Button fx:id="buttonSalir" layoutX="332.0" layoutY="334.0" mnemonicParsing="false" onMouseClicked="#OnClickSalir" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: red;" text="Salir" />
+      <Button layoutX="63.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#onClickedVerTablas" text="Ver Tabla De Vacunas Sugeridas" />
+   </children>
+</AnchorPane>

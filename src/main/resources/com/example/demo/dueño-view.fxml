@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="ancToros" prefHeight="586.0" prefWidth="576.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.DueñoController">
+   <children>
+      <ImageView fitHeight="586.0" fitWidth="737.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenesparaproyecto/f49bd73dbd58ec3fe3c47e9c589f6c47.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageBecerros" fitHeight="53.0" fitWidth="92.0" layoutX="252.0" layoutY="192.0" onMouseClicked="#onClickedBecerros" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenesparaproyecto/th%20(9).jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="buttonSalir" layoutX="493.0" layoutY="341.0" mnemonicParsing="false" onMouseClicked="#OnClickSalir" prefHeight="26.0" prefWidth="79.0" style="-fx-background-color: red;" text="Salir" textFill="#eaeaea" />
+      <ImageView fx:id="imageToro" fitHeight="76.0" fitWidth="87.0" layoutX="100.0" layoutY="66.0" onMouseClicked="#OnClickToros" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/FondoToros.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="buttonEventos" layoutX="252.0" layoutY="291.0" mnemonicParsing="false" onAction="#OnClickEventos" prefHeight="76.0" prefWidth="79.0">
+         <graphic>
+            <ImageView fitHeight="57.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../imagenesparaproyecto/th%20(4).jpg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fx:id="imgVacunas" fitHeight="76.0" fitWidth="128.0" layoutX="99.0" layoutY="400.0" onMouseClicked="#OnClickVacunas" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/VacunasFondo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgCompras" fitHeight="76.0" fitWidth="128.0" layoutX="99.0" layoutY="189.0" onMouseClicked="#OnClickCompras" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/FondoCompras.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageVacas" fitHeight="76.0" fitWidth="128.0" layoutX="248.0" layoutY="66.0" onMouseClicked="#OnClickVacasP" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/FondoVacas.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="buttonInventarioAlimentos" fitHeight="76.0" fitWidth="128.0" layoutX="99.0" layoutY="291.0" onMouseClicked="#onClickedInventarioAlimentos" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../../../imagenesparaproyecto/th%20(11).jpg" />
+      </ImageView>
+      <Text layoutX="237.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Opciones">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="252.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Becerros" textAlignment="CENTER" wrappingWidth="79.5" />
+      <Text layoutX="252.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eventos" textAlignment="CENTER" wrappingWidth="79.5" />
+      <Text layoutX="99.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alimentos" textAlignment="CENTER" wrappingWidth="75.06461334228516" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="ancBecerro" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.BecerroController">
+   <children>
+      <ImageView fitHeight="648.0" fitWidth="708.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenesparaproyecto/f49bd73dbd58ec3fe3c47e9c589f6c47.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="25.0" layoutY="71.0" prefHeight="184.0" prefWidth="572.0" spacing="10.0">
+         <children>
+            <GridPane>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" />
+                  <ColumnConstraints hgrow="SOMETIMES" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Nombre:" />
+                  <TextField fx:id="txtNombre" GridPane.columnIndex="1" />
+                  <Label text="Peso:" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtPeso" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" />
+                  <ColumnConstraints hgrow="SOMETIMES" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Raza:" />
+                  <TextField fx:id="txtRaza" GridPane.columnIndex="1" />
+                  <Label text="Sexo:" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtSexo" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <Button fx:id="btnAgregar" onAction="#agregarBecerro" text="Agregar Becerro" />
+            <Button fx:id="btnEliminar" onAction="#eliminarBecerro" text="Eliminar Becerro Seleccionado" />
+            <Button fx:id="btnSalir" onAction="#salir" text="Salir" />
+         </children>
+      </VBox>
+      <TableView fx:id="tablaBecerros" layoutX="14.0" layoutY="255.0" prefHeight="372.0" prefWidth="282.0">
+         <columns>
+            <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
+            <TableColumn fx:id="colPeso" prefWidth="75.0" text="Peso" />
+            <TableColumn fx:id="colRaza" prefWidth="75.0" text="Raza" />
+            <TableColumn fx:id="colSexo" prefWidth="75.0" text="Sexo" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

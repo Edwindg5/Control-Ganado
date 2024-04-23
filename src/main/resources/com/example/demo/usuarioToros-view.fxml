@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPaneUserToros" prefHeight="516.0" prefWidth="511.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.UserTorosController">
+   <children>
+      <ImageView fitHeight="516.0" fitWidth="621.0" layoutX="-2.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenesparaproyecto/f49bd73dbd58ec3fe3c47e9c589f6c47.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="167.0" layoutY="31.0" text="User opciones de Toro">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="74.0" text="Buscar por nombre" />
+      <Button fx:id="buttonBuscarNombre" layoutX="96.0" layoutY="107.0" mnemonicParsing="false" onMouseClicked="#OnClickBuscarNombre" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: #5AE85F; -fx-background-radius: 0;" text="Buscar" />
+      <Label layoutX="80.0" layoutY="137.0" prefHeight="18.0" prefWidth="102.0" text="Buscar por peso" />
+      <Button fx:id="buttonBuscarPeso" layoutX="95.0" layoutY="159.0" mnemonicParsing="false" onMouseClicked="#OnClickBuscarPeso" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: #5AE85F; -fx-background-radius: 0;" text="Buscar" />
+      <Label layoutX="276.0" layoutY="74.0" text="Ver estado de salud" />
+      <Button fx:id="buttonVerSalud" layoutX="310.0" layoutY="107.0" mnemonicParsing="false" onMouseClicked="#OnClickVerSalud" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: #5AE85F; -fx-background-radius: 0;" text="Ver" />
+      <Button fx:id="buttonBuscarId" layoutX="96.0" layoutY="229.0" mnemonicParsing="false" onMouseClicked="#OnClickBuscarId" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: #5AE85F; -fx-background-radius: 0;" text="Buscar" />
+      <Label layoutX="107.0" layoutY="199.0" text="Buscar id" />
+      <Button fx:id="buttonSalir" layoutX="396.0" layoutY="310.0" mnemonicParsing="false" onMouseClicked="#OnClickSalir" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: red;" text="Salir" textFill="#e7e2e2" />
+      <Button fx:id="buttonTorosv" layoutX="310.0" layoutY="172.0" mnemonicParsing="false" onMouseClicked="#OnClickToros" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: #5AE85F; -fx-background-radius: 0;" text="Ver" />
+      <Label layoutX="331.0" layoutY="146.0" text="Toros" />
+   </children>
+</AnchorPane>
