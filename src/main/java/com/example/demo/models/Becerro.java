@@ -1,6 +1,5 @@
 package com.example.demo.models;
 
-import javafx.beans.binding.BooleanExpression;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.value.ObservableValue;
@@ -9,20 +8,24 @@ import java.util.Random;
 
 public class Becerro {
     private String id;
-    private String nombre;
-    private double peso;
-    private String raza;
-    private String sexo;
+    private SimpleStringProperty nombre;
+    private SimpleDoubleProperty peso;
+    private SimpleStringProperty raza;
+    private SimpleStringProperty sexo;
 
-    public Becerro(String nombre, double peso, String raza, String sexo) {
-        this.id = generateRandomId();
-        this.nombre = nombre;
-        this.peso = peso;
-        this.raza = raza;
-        this.sexo = sexo;
+    public Becerro(String id, String nombre, double peso, String raza, String sexo) {
+        this.id = id;
+        this.nombre = new SimpleStringProperty(nombre);
+        this.peso = new SimpleDoubleProperty(peso);
+        this.raza = new SimpleStringProperty(raza);
+        this.sexo = new SimpleStringProperty(sexo);
     }
 
-    private String generateRandomId() {
+    public Becerro(String nombre, double peso, String raza, String sexo) {
+        this(generateRandomId(), nombre, peso, raza, sexo);
+    }
+
+    private static String generateRandomId() {
         StringBuilder sb = new StringBuilder();
         String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
         Random random = new Random();
@@ -38,19 +41,19 @@ public class Becerro {
     }
 
     public String getNombre() {
-        return nombre;
+        return nombre.get();
     }
 
     public double getPeso() {
-        return peso;
+        return peso.get();
     }
 
     public String getRaza() {
-        return raza;
+        return raza.get();
     }
 
     public String getSexo() {
-        return sexo;
+        return sexo.get();
     }
 
     public ObservableValue<String> idProperty() {
@@ -58,18 +61,18 @@ public class Becerro {
     }
 
     public ObservableValue<String> nombreProperty() {
-        return new SimpleStringProperty(nombre);
+        return nombre;
     }
 
     public ObservableValue<Double> pesoProperty() {
-        return new SimpleDoubleProperty(peso).asObject();
+        return peso.asObject();
     }
 
     public ObservableValue<String> razaProperty() {
-        return new SimpleStringProperty(raza);
+        return raza;
     }
 
     public ObservableValue<String> sexoProperty() {
-        return new SimpleStringProperty(sexo);
+        return sexo;
     }
 }
