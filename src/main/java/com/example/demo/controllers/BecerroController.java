@@ -1,7 +1,6 @@
 package com.example.demo.controllers;
 
 import com.example.demo.models.Becerro;
-import com.example.demo.models.CRUDOperations;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -39,21 +38,9 @@ public class BecerroController {
     private TableColumn<Becerro, String> colSexo;
 
     private ObservableList<Becerro> listaBecerros = FXCollections.observableArrayList();
-    private CRUDOperations crud = new CRUDOperations();
 
     private static ObservableValue<Double> call(TableColumn.CellDataFeatures<Becerro, Double> cellData) {
-        return cellData.getValue().pesoProperty().asObject();
-    }
-
-    @FXML
-    public void initialize() {
-        colNombre.setCellValueFactory(cellData -> cellData.getValue().nombreProperty());
-        colPeso.setCellValueFactory(BecerroController::call);
-        colRaza.setCellValueFactory(cellData -> cellData.getValue().razaProperty());
-        colSexo.setCellValueFactory(cellData -> cellData.getValue().sexoProperty());
-
-        listaBecerros = crud.read(); // Leer registros desde la base de datos
-        tablaBecerros.setItems(listaBecerros);
+        return cellData.getValue().pesoProperty();
     }
 
     @FXML
@@ -65,7 +52,6 @@ public class BecerroController {
 
         Becerro becerro = new Becerro(nombre, peso, raza, sexo);
         listaBecerros.add(becerro);
-        crud.create(becerro.getId(), nombre, peso, raza, sexo); // Crear registro en la base de datos
 
         limpiarCampos();
     }
@@ -75,7 +61,6 @@ public class BecerroController {
         Becerro selectedItem = tablaBecerros.getSelectionModel().getSelectedItem();
         if (selectedItem != null) {
             listaBecerros.remove(selectedItem);
-            crud.delete(selectedItem.getId()); // Eliminar registro en la base de datos
         }
     }
 

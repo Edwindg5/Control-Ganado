@@ -37,6 +37,7 @@ public class DueñoVacasController {
     @FXML
     private Button buttonSalir;
 
+
     Stage stage;
     @FXML
     void OnClickBuscarId(MouseEvent event) {
